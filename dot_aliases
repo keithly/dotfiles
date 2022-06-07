@@ -2,8 +2,8 @@
 
 # alias dotfiles='/usr/local/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
-alias po='pip list -o'
-alias piu='pip install -U'
+alias po='python -m pip list -o'
+alias piu='python -m pip install -U'
 
 # Shortcuts
 alias dl="cd ~/Downloads"
