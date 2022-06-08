@@ -102,6 +102,7 @@ source $ZSH/oh-my-zsh.sh
 
 export AWS_SDK_LOAD_CONFIG=1
 export EDITOR="code --wait"
+export HOMEBREW_UPDATE_REPORT_ALL_FORMULAE=1
 
 source ~/.aliases
 source ~/.functions
