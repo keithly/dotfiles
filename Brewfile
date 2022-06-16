@@ -76,6 +76,7 @@ cask "the-unarchiver"
 cask "thunderbird"
 cask "visual-studio-code"
 cask "vlc"
+mas "1Password for Safari", id: 1569813296
 mas "Brother iPrint&Scan", id: 1193539993
 mas "Day One", id: 1055511498
 mas "Disk Speed Test", id: 425264550
@@ -91,6 +92,8 @@ mas "Pages", id: 409201541
 mas "Pins", id: 1547106997
 mas "Pixelmator Pro", id: 1289583905
 mas "ToothFairy", id: 1191449274
+mas "Vinegar", id: 1591303229
 mas "WiFi Explorer", id: 494803304
 mas "WiFi Signal", id: 525912054
 mas "WireGuard", id: 1451685025
+mas "WorldWideWeb", id: 1621370168
