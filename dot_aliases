@@ -18,6 +18,9 @@ alias lt="exa --tree -aI '.git|__pycache__|.mypy_cache|.ipynb_checkpoints'"
 # show file previews for fzf using bat
 alias fp="fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'"
 
+# refine later
+alias kps="git ls-files -cdmo --exclude-standard  | entr -r ./script/server"
+
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
 
