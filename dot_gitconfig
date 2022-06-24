@@ -139,3 +139,5 @@
 	ff = only
 [commit]
 	gpgsign = true
+[init]
+	defaultBranch = main
