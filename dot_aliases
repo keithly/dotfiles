@@ -3,7 +3,10 @@
 # alias dotfiles='/usr/local/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 alias po='python -m pip list -o'
+alias pi='python -m pip install -U'
 alias piu='python -m pip install -U'
+alias ptc='python -m piptools compile -v -o requirements.txt pyproject.toml --resolver backtracking --generate-hashes'
+alias pts='python -m piptools sync'
 
 # Shortcuts
 alias dl="cd ~/Downloads"
