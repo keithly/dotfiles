@@ -2,11 +2,14 @@
 
 # alias dotfiles='/usr/local/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
+alias pl='python -m pip list'
 alias po='python -m pip list -o'
 alias pi='python -m pip install'
 alias piu='python -m pip install -U'
 alias ptc='python -m piptools compile -v -o requirements.txt pyproject.toml --resolver backtracking --generate-hashes'
 alias pts='python -m piptools sync'
+
+alias pvenv='python -m venv venv'
 
 # Shortcuts
 alias dl="cd ~/Downloads"
@@ -22,7 +25,7 @@ alias lt="exa --tree -aI '.git|__pycache__|.mypy_cache|.ipynb_checkpoints'"
 alias fp="fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'"
 
 # refine later
-alias kps="git ls-files -cdmo --exclude-standard  | entr -r ./script/server"
+alias kps="git ls-files -cdmo --exclude-standard | entr -r ./script/server"
 
 # Enable aliases to be sudo’ed
 alias sudo='sudo '

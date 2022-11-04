@@ -41,6 +41,7 @@ brew "tree"
 brew "unzip"
 brew "vim"
 brew "watch"
+brew "watchexec"
 brew "wget"
 brew "iann0036/iamlive/iamlive"
 brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
@@ -64,6 +65,7 @@ cask "kobo"
 cask "mullvadvpn"
 cask "netnewswire"
 cask "nightfall"
+cask "omnidisksweeper"
 cask "photosweeper-x"
 cask "proxyman"
 cask "pycharm-ce"
@@ -78,6 +80,8 @@ cask "visual-studio-code"
 cask "vlc"
 mas "1Password for Safari", id: 1569813296
 mas "Brother iPrint&Scan", id: 1193539993
+mas "Color Picker", id: 1545870783
+mas "Dark Reader for Safari", id: 1438243180
 mas "Day One", id: 1055511498
 mas "Disk Speed Test", id: 425264550
 mas "GarageBand", id: 682658836
@@ -95,5 +99,4 @@ mas "ToothFairy", id: 1191449274
 mas "Vinegar", id: 1591303229
 mas "WiFi Explorer", id: 494803304
 mas "WiFi Signal", id: 525912054
-mas "WireGuard", id: 1451685025
 mas "WorldWideWeb", id: 1621370168
