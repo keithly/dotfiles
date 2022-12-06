@@ -32,7 +32,7 @@
 	# Pull in remote changes for the current repository and all its submodules
 	p = pull --no-rebase --recurse-submodules
 
-	pm = pull upstream master
+	pm = pull upstream main
 
 	# push current branch and set upstream origin
 	po = "!git push --set-upstream origin \"$(git rev-parse --abbrev-ref HEAD)\""
@@ -46,9 +46,9 @@
 	# Switch to a branch, creating it if necessary
 	go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
 
-	# reset hard master origin or upstream to head
-	rsto = !git fetch origin && git reset --hard origin/master && git clean -f -d
-    rstu = !git fetch upstream && git reset --hard upstream/master && git clean -f -d
+	# reset hard main origin or upstream to head
+	rsto = !git fetch origin && git reset --hard origin/main && git clean -f -d
+    rstu = !git fetch upstream && git reset --hard upstream/main && git clean -f -d
 
 	# Show verbose output about tags, branches or remotes
 	tags = tag -l
@@ -82,7 +82,7 @@
 	# Find commits by commit message
 	fm = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short --grep=$1; }; f"
 
-	# Remove branches that have already been merged with master
+	# Remove branches that have already been merged with main
 	# a.k.a. ‘delete merged’
 	dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
 
