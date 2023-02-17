@@ -122,7 +122,13 @@ python_venv() {
   # TODO: don't deactivate in subdirs
   [[ ! -d $MYVENV ]] && deactivate > /dev/null 2>&1
 }
-autoload -U add-zsh-hook
-add-zsh-hook chpwd python_venv
+# autoload -U add-zsh-hook
+# add-zsh-hook chpwd python_venv
 
 #python_venv
+
+#export PATH="/usr/local/opt/postgresql@15/bin:$PATH"
+
+# must come last
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
