@@ -1,8 +1,6 @@
 tap "homebrew/bundle"
-tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
-tap "homebrew/core"
 tap "iann0036/iamlive"
 tap "universal-ctags/universal-ctags"
 brew "coreutils"
@@ -11,6 +9,7 @@ brew "asdf"
 brew "autossh"
 brew "sqlite"
 brew "xz"
+brew "docutils"
 brew "awscli"
 brew "bat"
 brew "chezmoi"
@@ -18,6 +17,7 @@ brew "curl"
 brew "dmg2img"
 brew "entr"
 brew "exa"
+brew "exercism"
 brew "fzf"
 brew "gcc"
 brew "gh"
@@ -43,6 +43,7 @@ brew "vim"
 brew "watch"
 brew "watchexec"
 brew "wget"
+brew "zsh-syntax-highlighting"
 brew "iann0036/iamlive/iamlive"
 brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
 cask "1password"
@@ -68,7 +69,7 @@ cask "nightfall"
 cask "omnidisksweeper"
 cask "photosweeper-x"
 cask "proxyman"
-cask "pycharm-ce"
+cask "pycharm"
 cask "qbittorrent"
 cask "quicken"
 cask "rectangle"
@@ -78,6 +79,7 @@ cask "the-unarchiver"
 cask "thunderbird"
 cask "visual-studio-code"
 cask "vlc"
+cask "zoom"
 mas "1Password for Safari", id: 1569813296
 mas "Brother iPrint&Scan", id: 1193539993
 mas "Color Picker", id: 1545870783
@@ -85,6 +87,7 @@ mas "Dark Reader for Safari", id: 1438243180
 mas "Day One", id: 1055511498
 mas "Disk Speed Test", id: 425264550
 mas "GarageBand", id: 682658836
+mas "Go Map!!", id: 592990211
 mas "GrandPerspective", id: 1111570163
 mas "iA Writer", id: 775737590
 mas "iMovie", id: 408981434
@@ -95,6 +98,7 @@ mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Pins", id: 1547106997
 mas "Pixelmator Pro", id: 1289583905
+mas "StopTheMadness", id: 1376402589
 mas "ToothFairy", id: 1191449274
 mas "Vinegar", id: 1591303229
 mas "WiFi Explorer", id: 494803304
