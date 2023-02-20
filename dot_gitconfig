@@ -1,14 +1,14 @@
 [user]
 	email = krp@keithrpetersen.com
 	name = Keith Petersen
-    signingkey = 6F4B1A6ADF69F62A
+	signingkey = 6F4B1A6ADF69F62A
 
 [init]
 	defaultBranch = main
 
 [core]
 	autocrlf = input
-    editor = code --wait
+	editor = code --wait
 
 [gpg]
 	program = gpg
@@ -69,7 +69,7 @@
 
 	# reset hard main origin or upstream to head
 	rsto = !git fetch origin && git reset --hard origin/main && git clean -f -d
-    rstu = !git fetch upstream && git reset --hard upstream/main && git clean -f -d
+	rstu = !git fetch upstream && git reset --hard upstream/main && git clean -f -d
 
 	# Show verbose output about tags, branches or remotes
 	tags = tag -l
@@ -112,5 +112,5 @@
 
 	# Show the user email for the current repository.
 	whoami = config user.email
-	
-    br = ! git for-each-ref --sort='authordate' --format='%(refname)%09%(authordate)' refs/heads | sed -e 's-refs/heads/--' | tail
+
+	br = ! git for-each-ref --sort='authordate' --format='%(refname)%09%(authordate)' refs/heads | sed -e 's-refs/heads/--' | tail
