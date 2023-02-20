@@ -3,13 +3,37 @@
 	name = Keith Petersen
     signingkey = 6F4B1A6ADF69F62A
 
+[init]
+	defaultBranch = main
+
 [core]
-	excludesfile = ~/.gitignore_global
 	autocrlf = input
-    editor = vi
+    editor = code --wait
+
+[gpg]
+	program = gpg
+
+[commit]
+	gpgsign = true
+
+[push]
+	default = simple
+
+[pull]
+	ff = only
+
+[apply]
+	# Detect whitespace errors when applying a patch
+	whitespace = fix
+
+[branch]
+	sort = -committerdate
+
+[help]
+	# Automatically correct and execute mistyped commands
+	autocorrect = 1
 
 [alias]
-
 	# Get the current branch name (not so useful in itself, but used in
 	# other aliases)
 	branch-name = "!git rev-parse --abbrev-ref HEAD"
@@ -86,55 +110,7 @@
 	# List contributors with number of commits
 	contributors = shortlog --summary --numbered
 
-  # Show the user email for the current repository.
+	# Show the user email for the current repository.
 	whoami = config user.email
 	
     br = ! git for-each-ref --sort='authordate' --format='%(refname)%09%(authordate)' refs/heads | sed -e 's-refs/heads/--' | tail
-
-[apply]
-
-	# Detect whitespace errors when applying a patch
-	whitespace = fix
-
-[branch]
-	sort = -committerdate
-
-[color]
-
-	# Use colors in Git commands that are capable of colored output when
-	# outputting to the terminal. (This is the default setting in Git ≥ 1.8.4.)
-	ui = true
-
-[color "branch"]
-
-	current = yellow reverse
-	local = yellow
-	remote = green
-
-[color "diff"]
-
-	meta = yellow bold
-	frag = magenta bold # line info
-	old = red # deletions
-	new = green # additions
-
-[color "status"]
-
-	added = yellow
-	changed = green
-	untracked = cyan
-
-[help]
-
-	# Automatically correct and execute mistyped commands
-	autocorrect = 1
-[gpg]
-	program = gpg
-[push]
-	default = simple
-[pull]
-	ff = only
-[commit]
-	gpgsign = true
-[init]
-	defaultBranch = main

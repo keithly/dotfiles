@@ -102,7 +102,6 @@ source $ZSH/oh-my-zsh.sh
 
 export AWS_SDK_LOAD_CONFIG=1
 export EDITOR="code --wait"
-export HOMEBREW_UPDATE_REPORT_ALL_FORMULAE=1
 
 source ~/.aliases
 source ~/.functions
@@ -127,8 +126,5 @@ python_venv() {
 
 #python_venv
 
-#export PATH="/usr/local/opt/postgresql@15/bin:$PATH"
-
 # must come last
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
+#source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
