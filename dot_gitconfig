@@ -4,12 +4,9 @@
     signingkey = 6F4B1A6ADF69F62A
 
 [core]
-	excludesfile = /Users/keith/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	autocrlf = input
     editor = vi
-
-[includeIf "gitdir:~/Developer/lt/"]
-    path = ~/Developer/lt/.gitconfig_include
 
 [alias]
 
