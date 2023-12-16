@@ -6,20 +6,17 @@ alias pl='python -m pip list'
 alias po='python -m pip list -o'
 alias pi='python -m pip install'
 alias piu='python -m pip install -U'
-alias ptc='python -m piptools compile -v -o requirements.txt pyproject.toml --resolver backtracking --generate-hashes'
+alias ptc='python -m piptools compile -v -o requirements.txt pyproject.toml --generate-hashes'
 alias pts='python -m piptools sync'
-
-alias pvenv='python -m venv venv'
 
 # Shortcuts
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias dv="cd ~/Developer"
 
-alias ls='exa'
-alias ll='exa -lagh --git'
-alias lsd='exa -laghD --git'
-alias lt="exa --tree -aI '.git|__pycache__|.mypy_cache|.ipynb_checkpoints'"
+alias ll='eza -lagh --git'
+alias lsd='eza -laghD --git'
+alias lt="eza --tree -aI '.git|__pycache__|.mypy_cache|.ipynb_checkpoints'"
 
 # show file previews for fzf using bat
 alias fp="fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'"
