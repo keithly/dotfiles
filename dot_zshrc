@@ -137,6 +137,10 @@ eval "$(starship init zsh)"
 . /usr/local/opt/asdf/libexec/asdf.sh
 source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
 
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/terragrunt terragrunt
+
 eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
 eval "$(direnv hook zsh)"
+
