@@ -1,7 +1,7 @@
 [user]
 	email = krp@keithrpetersen.com
 	name = Keith Petersen
-	signingkey = 6F4B1A6ADF69F62A
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIA0y9X0vAnLx955ycZOs9TGSjJflb/RaOcC8x8UH1RLM
 
 [init]
 	defaultBranch = main
@@ -9,14 +9,40 @@
 [core]
 	autocrlf = input
 	editor = code --wait
+	pager = delta
 
 [gpg]
-	program = gpg
+  format = ssh
+
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
 
 [commit]
 	gpgsign = true
 
+[interactive]
+	diffFilter = delta --color-only
+
+[delta]
+	navigate = true    # use n and N to move between diff sections
+	side-by-side = true
+	syntax-theme = GitHub
+
+	# delta detects terminal colors automatically; set one of these to disable auto-detection
+	# dark = true
+	# light = true
+
+[merge]
+	conflictstyle = zdiff3
+
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+
 [push]
+	autoSetupRemote = true
 	default = simple
 
 [pull]
@@ -26,8 +52,14 @@
 	# Detect whitespace errors when applying a patch
 	whitespace = fix
 
+[column]
+	ui = auto
+
 [branch]
 	sort = -committerdate
+
+[tag]
+	sort = version:refname
 
 [help]
 	# Automatically correct and execute mistyped commands
